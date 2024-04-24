@@ -2,8 +2,6 @@
 
 An [Express server](http://expressjs.com) implementation
 
-You can [🎥 watch a video](https://youtu.be/WG4ehXSEpz4) to see how this server was implemented and [read the transcripts](./TRANSCRIPTS.md).
-
 ## Requirements
 
 - Node v20+
@@ -28,26 +26,3 @@ STRIPE_WEBHOOK_SECRET=whsec_...
 STATIC_DIR=../../client/html
 DOMAIN=http://localhost:4242
 ```
-
-<details>
-<summary>Optionally - Add Stripe Tax</summary>
-Stripe Tax lets you calculate and collect sales tax, VAT and GST with one line of code.
-To enable Stripe Tax set up in the dashboard: [Docs - Set up Stripe Tax](https://stripe.com/docs/tax/set-up).
-
-In ["server.js"](./server.js), set calcuateTax to true if you want Stripe to calculate tax for the transactions in this application.
-
-```javascript
-const calculateTax = true;
-```
-
-</details>
-
-2. Install dependencies and start the server
-
-```
-npm install
-npm start
-```
-
-3. If you're using the html client, go to `localhost:4242` to see the demo. For
-   react, visit `localhost:3000`.
